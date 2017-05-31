@@ -98,6 +98,6 @@ def get_user_model():
 
 def get_username_field():
     if django.VERSION[:2] >= (1, 5):
-        return get_user_model().USERNAME_FIELD
+        return get_user_model().NICKNAME_FIELD
     else:
         return 'username'
